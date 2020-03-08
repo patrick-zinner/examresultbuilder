@@ -3,7 +3,7 @@ package examresultsbuilder.examtemplate
 import javax.persistence.*
 
 @Entity
-data class ExamTemplate(@Id var id: Long?,
+data class ExamTemplate(@Id @GeneratedValue var id: Long?,
                         var name: String,
                         @OneToMany(mappedBy = "exam") val categories: List<TaskCategory>)
 

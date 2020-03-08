@@ -1,6 +1,5 @@
 package examresultsbuilder.examtemplate
 
-import com.sun.istack.NotNull
 import javax.inject.Singleton
 import javax.persistence.NoResultException
 import javax.transaction.Transactional
