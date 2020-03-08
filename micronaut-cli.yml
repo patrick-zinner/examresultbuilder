@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: examresultsbuilder
+---
+testFramework: junit
+sourceLanguage: kotlin
