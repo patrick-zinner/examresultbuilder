@@ -155,6 +155,7 @@
           <jvmTarget>${jdk.version}</jvmTarget>
           <compilerPlugins>
             <plugin>all-open</plugin>
+            <plugin>jpa</plugin>
           </compilerPlugins>
           <pluginOptions>
             <option>all-open:annotation=io.micronaut.aop.Around</option>
@@ -243,6 +244,11 @@
           </execution>
         </executions>
         <dependencies>
+          <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-maven-noarg</artifactId>
+            <version>${kotlinVersion}</version>
+          </dependency>
           <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-maven-allopen</artifactId>
